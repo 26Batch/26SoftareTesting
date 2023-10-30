@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="GroupTest">
+	  <groups>
+		  <run>
+			  <include name="sanity"></include>
+			  <exclude name="regression"></exclude>
+		  </run>
+	  </groups>
+    <classes>
+      <class name="testCases.LoginPageTest"/>
+      <class name="testCases.Inventory_Page_Test"/>
+    </classes>
+  </test> <!-- GroupTest -->
+</suite> <!-- Suite -->
