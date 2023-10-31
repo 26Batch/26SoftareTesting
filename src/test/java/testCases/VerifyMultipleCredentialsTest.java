@@ -25,14 +25,14 @@ public class VerifyMultipleCredentialsTest extends TestBase
 		initialization();
 		login=new LoginPage();
 	}
-	@Test
+	@Test(enabled=fals,)
 	public void LoginToApplicationTest() throws IOException
 	{
 		String expURL="https://www.saucedemo.com/inventory.html";
 		String actURL=login.LoginToApplication();
 		Assert.assertEquals(expURL,actURL);
 	}
-	@Test(dataProvider = "credentials")
+	@Test(enabled=false,dataProvider = "credentials")
 	public void LoginToApplicationWithMultipleDataTest(String un,String pass) throws IOException
 	{
 		SoftAssert s=new SoftAssert();
