@@ -25,7 +25,7 @@ public class VerifyMultipleCredentialsTest extends TestBase
 		initialization();
 		login=new LoginPage();
 	}
-	@Test(enabled=fals,)
+	@Test(enabled=false)
 	public void LoginToApplicationTest() throws IOException
 	{
 		String expURL="https://www.saucedemo.com/inventory.html";
